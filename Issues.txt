@@ -1,0 +1,6 @@
+- All methods with email input accept any value instead of validating the correct email format
+- Login with unexistent user returns success message with empty token instead of an error message
+- Most API errors are Server side exceptions that don't actually mean much to the user, there should be clearer messages
+- No validation on new Employees data, duplicate entries are accepted
+- Employees DELETE method documentation is incorrect as it specifies parameter 'id' which is not accepted by the server, the accepted parameter name is 'ids'
+- Employees PATCH method doesn't apply the data changes even though an 'updated' message is received
